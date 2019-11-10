@@ -1,5 +1,6 @@
 fold_enrichment = function(graph, ref_graph){
-  estimated_number_of_nodes = 114.53 #external data
+  #estimated_number_of_nodes = 114.53 #external data
+  estimated_number_of_nodes = 94.3157894736842 #external data
   
   correct = 0
   incorrect = 0

@@ -17,7 +17,7 @@ load("D:/CODING/epigenetics-network/graphs.RData")
 #ref graph
 experimental_g <- read_graph("D:/CODING/epigenetics-network/tools/experimental_graph.txt")
 experimental_g <- set.vertex.attribute(experimental_g, "name", value= TF_names)
-#plot(experimental_g)
+plot(experimental_g)
 ref_mat <- as.data.frame(get.edgelist(experimental_g))
 
 

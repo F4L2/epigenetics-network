@@ -39,7 +39,7 @@ for i in range(len(TFs)):
 
 
 print(mat)
-print(notfound)
+print(notfound, len(notfound))
 print(found)
 
 with open("experimental_graph.txt",'w') as f:
@@ -49,20 +49,22 @@ with open("experimental_graph.txt",'w') as f:
         for j in range(len(TFs)):
             c = mat[i,j]
             if(c != 0):
-                #f.write(TFs[i] + '  ' + TFs[j] + ' ' +str(1) +'\n')
-                f.write(str(i) + '  ' + str(j) +'\n')
+                #f.write(str(i) + '  ' + str(j) +'\n')
 
-                all_inter += 1
+                
                 if(i==j):
                     autoregulator += 1
-    
+                else:
+                    f.write(str(i) + '  ' + str(j) +'\n')
+                    all_inter += 1
+
     print(autoregulator, all_inter)
 
 
     average_inter = all_inter / (len(TFs)-len(notfound))
     estimate_edges = average_inter * len(TFs)
     
-    print(estimate_edges)
+    print( average_inter, estimate_edges)
 
 
 

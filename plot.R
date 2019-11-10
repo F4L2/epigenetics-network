@@ -104,7 +104,7 @@ for(i in seq(1, length(edges), by=1)){
 
 
 #PC
-pc_res = PC_GRAPHS[[17]]
+pc_res = PC_GRAPHS[[2]]
 graphviz.plot(pc_res)
 
 graph = igraph.from.graphNEL(as.graphNEL(pc_res)) #convert bnlearn graph to igraph
@@ -238,7 +238,7 @@ fold_enrichment(pred_mat, ref_mat)
 
 
 
-
+#autoregul
 
 edges = get.edgelist(graph_rf)
 autoregul = 0 
