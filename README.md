@@ -1,4 +1,4 @@
-Project 7: Epigenetics marks and targets
+Project: Epigenetics marks and targets
 Epigenetics is one of the most promising fields of modern molecular biology. Temporary DNA
 modifications are suspected of having a significant impact on a wide range of processes, from
 carcinogenesis to the adaptation of an organism to the environment. The full list of effets of
